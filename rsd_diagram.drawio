@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-14T13:01:25.284Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="jjUsyqDWWp_0zO3s0QXR" version="13.7.9" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-10-14T13:12:36.913Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="6Ld2ENIR7gNUliuEis9P" version="13.7.9" type="github" pages="2">
   <diagram id="4aDPoYBwtV_hieTDLoHm" name="Core">
     <mxGraphModel dx="1072" dy="1132" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -237,10 +237,13 @@
     </mxGraphModel>
   </diagram>
   <diagram id="OiWA91-ToNPo51ypZz9b" name="NextPCStage">
-    <mxGraphModel dx="468" dy="506" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2716" dy="2936" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="jMAA2BAcvzg1U62WBiOU-0" />
         <mxCell id="jMAA2BAcvzg1U62WBiOU-1" parent="jMAA2BAcvzg1U62WBiOU-0" />
+        <mxCell id="9kcOS0f9HWzpkulHFJdY-65" value="" style="shape=ext;rounded=1;html=1;whiteSpace=wrap;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="jMAA2BAcvzg1U62WBiOU-1">
+          <mxGeometry x="1760" y="430" width="430" height="290" as="geometry" />
+        </mxCell>
         <mxCell id="Yql3qH4FXpEBecCnsVP0-119" value="" style="shape=ext;rounded=1;html=1;whiteSpace=wrap;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="jMAA2BAcvzg1U62WBiOU-1">
           <mxGeometry x="1121" y="540" width="499" height="560" as="geometry" />
         </mxCell>
@@ -773,8 +776,19 @@
         <mxCell id="9kcOS0f9HWzpkulHFJdY-57" value="port.icNextReadAddrIn =&amp;nbsp;&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;ToPhyAddrFromLogical&lt;/font&gt;(&lt;br&gt;fetchAddr)" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="jMAA2BAcvzg1U62WBiOU-1">
           <mxGeometry x="1982.5" y="630" width="185" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="9kcOS0f9HWzpkulHFJdY-61" value="&lt;h1&gt;logic&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="jMAA2BAcvzg1U62WBiOU-1">
-          <mxGeometry x="1025" y="20" width="205" height="70" as="geometry" />
+        <mxCell id="9kcOS0f9HWzpkulHFJdY-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="jMAA2BAcvzg1U62WBiOU-1" source="9kcOS0f9HWzpkulHFJdY-61">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1437.5" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9kcOS0f9HWzpkulHFJdY-61" value="&lt;h1&gt;&lt;div style=&quot;font-family: &amp;#34;droid sans mono&amp;#34; , monospace , monospace , &amp;#34;droid sans fallback&amp;#34; ; font-weight: normal ; font-size: 12px ; line-height: 19px&quot;&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;font color=&quot;#b266ff&quot;&gt;function automatic&lt;/font&gt; &lt;font color=&quot;#007fff&quot;&gt;logic&lt;/font&gt; &lt;font color=&quot;#ff8000&quot;&gt;StepOverCacheLine&lt;/font&gt; (PC_Path pc1, PC_Path pc2);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;    &lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;font color=&quot;#b266ff&quot;&gt;return&lt;/font&gt; pc1[ICACHE_LINE_BYTE_NUM_BIT_WIDTH] != pc2[ICACHE_LINE_BYTE_NUM_BIT_WIDTH];&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;font color=&quot;#b266ff&quot;&gt;endfunction&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/h1&gt;" style="text;html=1;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;strokeColor=#000000;" vertex="1" parent="jMAA2BAcvzg1U62WBiOU-1">
+          <mxGeometry x="770" y="10" width="610" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9kcOS0f9HWzpkulHFJdY-64" value="Detect the cache line boundary in sequential access" style="shape=ext;rounded=1;html=1;whiteSpace=wrap;strokeColor=#000000;" vertex="1" parent="jMAA2BAcvzg1U62WBiOU-1">
+          <mxGeometry x="1437.5" y="45" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9kcOS0f9HWzpkulHFJdY-66" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px&quot;&gt;I-Cache Access&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jMAA2BAcvzg1U62WBiOU-1">
+          <mxGeometry x="1902.5" y="450" width="107.5" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
