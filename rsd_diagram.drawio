@@ -1,5 +1,5 @@
-<mxfile host="app.diagrams.net" modified="2020-10-14T08:42:38.492Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="f8DnuVG7d-fcP-woFd5T" version="13.7.9" type="github">
-  <diagram id="4aDPoYBwtV_hieTDLoHm" name="Page-1">
+<mxfile host="app.diagrams.net" modified="2020-10-14T08:53:37.034Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="f98bS9MTqH-T1cHLcDbo" version="13.7.9" type="github" pages="2">
+  <diagram id="4aDPoYBwtV_hieTDLoHm" name="Core">
     <mxGraphModel dx="840" dy="799" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -202,6 +202,40 @@
         </mxCell>
         <mxCell id="_uMww5thWF_9aW9jhP11-114" value="dsStage" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="_uMww5thWF_9aW9jhP11-108">
           <mxGeometry y="156" width="120" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="OiWA91-ToNPo51ypZz9b" name="NextPCStage">
+    <mxGraphModel dx="714" dy="679" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="jMAA2BAcvzg1U62WBiOU-0" />
+        <mxCell id="jMAA2BAcvzg1U62WBiOU-1" parent="jMAA2BAcvzg1U62WBiOU-0" />
+        <mxCell id="Yql3qH4FXpEBecCnsVP0-0" value="NextPCStage" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="jMAA2BAcvzg1U62WBiOU-1">
+          <mxGeometry x="40" y="40" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Yql3qH4FXpEBecCnsVP0-1" value="NextPCStage_This" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Yql3qH4FXpEBecCnsVP0-0">
+          <mxGeometry y="26" width="200" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Yql3qH4FXpEBecCnsVP0-2" value="FetchStage_Next" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Yql3qH4FXpEBecCnsVP0-0">
+          <mxGeometry y="52" width="200" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Yql3qH4FXpEBecCnsVP0-3" value="RecoveryManager_Next_recovery" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Yql3qH4FXpEBecCnsVP0-0">
+          <mxGeometry y="78" width="200" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Yql3qH4FXpEBecCnsVP0-15" value="Controller" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Yql3qH4FXpEBecCnsVP0-0">
+          <mxGeometry y="104" width="200" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Yql3qH4FXpEBecCnsVP0-18" value="Phase(enum)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" collapsed="1" parent="jMAA2BAcvzg1U62WBiOU-1">
+          <mxGeometry x="330" y="40" width="100" height="26" as="geometry">
+            <mxRectangle x="330" y="40" width="90" height="78" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Yql3qH4FXpEBecCnsVP0-19" value="Fetch" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Yql3qH4FXpEBecCnsVP0-18">
+          <mxGeometry y="26" width="100" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Yql3qH4FXpEBecCnsVP0-20" value="Wait" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Yql3qH4FXpEBecCnsVP0-18">
+          <mxGeometry y="52" width="100" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
